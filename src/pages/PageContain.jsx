@@ -83,7 +83,7 @@ class PageContain extends Component {
           </Page>
           <Page
             bgImg="https://cdn.pixabay.com/photo/2019/05/26/14/55/ducks-4230463_960_720.jpg"
-            title={this.props.contactTitle}
+            title={this.state.contactTitle}
           >
             <Contact eventKey={2} />
           </Page>
