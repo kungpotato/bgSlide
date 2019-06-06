@@ -1,2 +1,0 @@
-# bgSlide
-Created with CodeSandbox
