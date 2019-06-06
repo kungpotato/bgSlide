@@ -15,9 +15,10 @@ class PageContain extends Component {
     super(props);
     this.state = {
       currentPage: 1,
-      mapTitle: "",
-      reportTitle: "",
-      contactTitle: ""
+      mapTitle: "Map",
+      reportTitle: "Report",
+      contactTitle: "Contact",
+      isFade: false
     };
     this._pageScroller = null;
     // this.goToReport = React.createRef();
@@ -30,15 +31,11 @@ class PageContain extends Component {
   pageOnChange = number => {
     this.setState({
       currentPage: number,
-      mapTitle: "Map",
-      reportTitle: "Report",
-      contactTitle: "Contact"
+      isFade: true
     });
     setTimeout(() => {
       this.setState({
-        mapTitle: "",
-        reportTitle: "",
-        contactTitle: ""
+        isFade: false
       });
     }, 1000);
   };
@@ -72,18 +69,21 @@ class PageContain extends Component {
           <Page
             bgImg="https://cdn.pixabay.com/photo/2019/06/04/19/54/norway-4252178_960_720.jpg"
             title={this.state.mapTitle}
+            isFade={this.state.isFade}
           >
             <GoogleMap eventKey={0} />
           </Page>
           <Page
             bgImg="https://cdn.pixabay.com/photo/2019/06/01/10/08/macro-4243782_960_720.jpg"
             title={this.state.reportTitle}
+            isFade={this.state.isFade}
           >
             <Report eventKey={1} />
           </Page>
           <Page
             bgImg="https://cdn.pixabay.com/photo/2019/05/26/14/55/ducks-4230463_960_720.jpg"
             title={this.state.contactTitle}
+            isFade={this.state.isFade}
           >
             <Contact eventKey={2} />
           </Page>
