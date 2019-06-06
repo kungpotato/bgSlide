@@ -48,7 +48,7 @@ class PageContain extends Component {
       <div className="demo-page-contain" style={{ background: "#cfd8dc" }}>
         <AppBar
           position="fixed"
-          style={{ background: "rgba(255,255,255,0.3)" }}
+          style={{ background: "rgba(0,0,0,0.3)", boxShadow: "none" }}
         >
           <Toolbar>
             <Button onClick={() => this.goToPage(0)} style={{ color: "#fff" }}>
