@@ -51,9 +51,15 @@ class PageContain extends Component {
           style={{ background: "rgba(255,255,255,0.3)" }}
         >
           <Toolbar>
-            <Button onClick={() => this.goToPage(0)}>map</Button>
-            <Button onClick={() => this.goToPage(1)}>report</Button>
-            <Button onClick={() => this.goToPage(2)}>contact</Button>
+            <Button onClick={() => this.goToPage(0)} style={{ color: "#fff" }}>
+              map
+            </Button>
+            <Button onClick={() => this.goToPage(1)} style={{ color: "#fff" }}>
+              report
+            </Button>
+            <Button onClick={() => this.goToPage(2)} style={{ color: "#fff" }}>
+              contact
+            </Button>
           </Toolbar>
         </AppBar>
         <ReactPageScroller
