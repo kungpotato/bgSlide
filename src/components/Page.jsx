@@ -10,7 +10,7 @@ class Page extends Component {
         }}
       >
         <h1 style={{ padding: "20px", margin: "20px" }}>{this.props.title}</h1>
-        <Paper style={{ padding: "10px", margin: "10px", height: "80vh" }}>
+        <Paper style={{ padding: "10px", margin: "10px", height: "90vh" }}>
           {this.props.children}
         </Paper>
       </div>
